@@ -30,6 +30,7 @@ header{
 }
 
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -143,6 +144,7 @@ n-historias{
 }
 
 .img-galeria{
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -168,6 +170,7 @@ n-historias{
     transform: translate(0);
 }
 .agregar-imagen{
+    object-fit: cover;
     width: 50%;
     border-radius: 10px;
     transform: scale(0);
@@ -278,4 +281,83 @@ footer{
     height: 2px;
     background: #000;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-historias img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-historias{
+        width: 80%;
+    }
+    .historias{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+    .img-galeria{
+        width: 45%;
+    }
+    .cont-downloads{
+        width: 80%;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    .social-media i{
+        margin-left: 0;
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        background-image: linear-gradient(120deg, rgba(132, 250, 175, 0.3) 0%, rgba(143, 210, 244, 0.3) 100%), url(../img/cinco.jpg);
+    }
+    .menu-navegacion{
+        width: 65vw;
+    }
+    .agregar-imagen{
+        width: 95%;
+    }
+    .hamburguer{
+        top: 20px;
+        right: 20px;;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .img-galeria{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
 }
